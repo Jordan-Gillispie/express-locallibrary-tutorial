@@ -19,7 +19,7 @@ var app = express();
 //   client.close();
 // });
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb+srv://mr-g:JZOVlfJH99sLi38o@cluster0.hubom.mongodb.net/Cluster0?retryWrites=true&w=majority';
+var mongoDB = '';
 mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
